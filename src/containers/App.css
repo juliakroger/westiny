@@ -1,0 +1,42 @@
+body {
+    width: 100%;
+    background-size: cover;
+    text-align:center;
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/game-of-thrones-kings-landing-christopher-clark.jpg');
+    font-family: 'Dosis', sans-serif;   
+}
+
+.girlNextDoor {
+      font-family: 'Cedarville Cursive', cursive;
+}
+
+.btn {
+  margin: 5px;
+}
+
+
+.cardAccount {
+	max-width: 500px;
+
+}
+
+.pointer {
+	cursor: pointer;
+	color: #3399ff;
+}
+
+.cardCities {
+  max-width: 290px;
+}
+
+.review-img {
+  width: 80%;
+  min-width: 220px;
+  max-width: 400px;
+}
+
+
+.reviewStars {
+  width: 280px;
+}
+

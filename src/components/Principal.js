@@ -2,7 +2,28 @@ import React from 'react';
 import Card from './Card';
 
 
-const Principal = ({onRouteChange}) => {
+class Principal extends React.Component {
+
+	constructor(){
+		super();
+		this.state = {
+			cities: []
+		}
+	}
+
+
+componentDidMount(){
+	const self = this;
+	fetch('http://localhost:3000/places')
+	.then(response => response.json())
+	.then(data => {this.state.cities = data;
+		self.forceUpdate()})
+}
+
+
+
+render (){
+
   return  (
 <div className="container">
 	<h1 className="girlNextDoor">Find places</h1> 
@@ -11,7 +32,8 @@ const Principal = ({onRouteChange}) => {
 	<form>
 		<div className="input-field orange lighten-4">
 	    <input id="search" type="search" />
-	    <label className="label-icon" for="search"><i className="material-icons">search</i></label>
+	    <label className="label-icon" htmlFor="search"><i className="material-icons">search</i></label>
+	    <p className='pointer'></p>
 	    </div>
 	</form>
 	</div>
@@ -19,13 +41,15 @@ const Principal = ({onRouteChange}) => {
 
     <h5>Cities:</h5>
 
-	<div className='row'>
-	<Card onRouteChange={onRouteChange}/>
-	
+	<div class="row">
+
+{
+	this.state.cities.map((city) => (<Card city={city.city} img={city.img} />))
+}	
 	</div>
 </div>
         
     );
-}
+}}
 
 export default Principal;

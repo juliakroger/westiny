@@ -12,7 +12,7 @@ const Container = ({onRouteChange}) => {
 		
 	    <div className="container">
 		    <h1 className='girlNextDoor'>Discover the colorful world</h1>
-		    <h4 className='Dosis'>New Adventure</h4>
+		    <h4 className='Dosis'>NEW ADVENTURE</h4>
 		    <p className='Dosis'>A social media to find tips & tricks to have a perfect vacation and qualify the places that you visit.</p>
 	    	<button 
 	    	onClick={() => onRouteChange('signin')}

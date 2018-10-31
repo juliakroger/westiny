@@ -18,21 +18,19 @@ class App extends Component {
 
   render() {
     return (
+
       <div className="App">
       
 {
-	(this.state.route === 'container') ?
-    <Container onRouteChange={this.onRouteChange} />
-
+	(this.state.route === 'register') ?
+    <Register onRouteChange={this.onRouteChange} />
     : ( this.state.route === 'signin') ?
     <Signin onRouteChange={this.onRouteChange} />
-
     : 
-    <Register onRouteChange={this.onRouteChange} />
-
-
+    <Container onRouteChange={this.onRouteChange} />
 }
       </div>
+
     );
   }
 }

@@ -9,7 +9,7 @@ class home extends React.Component {
   constructor(){
     super();
     this.state = {
-      route: 'principal'
+      route: 'review'
     }
   }
 

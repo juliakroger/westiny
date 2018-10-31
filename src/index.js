@@ -9,13 +9,13 @@ import 'materialize-css/dist/css/materialize.min.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
-	<BrowserRouter>
-	<Switch>
+  <BrowserRouter>
+  <Switch>
             <Route path="/" exact={true} component={App} />
             <Route path="/home" component={home} />
     </Switch>
-	</ BrowserRouter>
-	, document.getElementById('root'));
+  </ BrowserRouter>
+  , document.getElementById('root'));
 
 
 serviceWorker.unregister();

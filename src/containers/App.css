@@ -22,11 +22,7 @@ body {
 
 .pointer {
 	cursor: pointer;
-	color: #3399ff;
-}
-
-.cardCities {
-  max-width: 290px;
+	color: #ffffff;
 }
 
 .review-img {
@@ -40,3 +36,12 @@ body {
   width: 280px;
 }
 
+.cardCities {
+  width: 290px;
+  height: 300px;
+}
+
+.NavIcons {
+  margin-left: 10px;
+  margin-right: 10px;
+}

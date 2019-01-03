@@ -6,15 +6,16 @@ import home from './containers/home';
 import * as serviceWorker from './serviceWorker';
 import 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import {Switch, Route, BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
-  <BrowserRouter>
-  <Switch>
-            <Route path="/" exact={true} component={App} />
+    <BrowserRouter>
+      <Switch>
+            <Route path="/" component={App}/>
             <Route path="/home" component={home} />
-    </Switch>
-  </ BrowserRouter>
+      </Switch>
+    </BrowserRouter>
+
   , document.getElementById('root'));
 
 

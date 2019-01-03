@@ -1,0 +1,212 @@
+html, body
+{
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+#app{
+  background-color: #FAFAFA;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+}
+
+.sidebar{
+  background-color: #424242;
+  width: 112px !important;
+}
+
+.sidebar__item{
+  cursor: pointer;
+  padding: 20px 12px;
+  color: white;
+  font-size: 16px;
+  border-bottoma: 1px solid #27343b;
+  &:first{
+    margin-topa: 72px;
+  }
+  &:hover{
+    background-color: #27343b;
+  }
+}
+
+.sidebar__item__label{
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.sidebar__item__icon {
+  color: #FFFFFF;
+}
+
+.page-header {
+  padding-left: 12px !important;
+  height: 72px;
+  background-color: #00695C;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.darker-row th {
+  background-color: #EEEEEE !important;
+}
+
+.actions-icon{
+  cursor: pointer;
+}
+
+.toolbar-user {
+  color: #ffffff;
+}
+
+.user-menu {
+  right: 0 !important;
+  top: 32px !important;
+  left: unset !important;
+}
+
+.user-menu-title {
+  font-size: 16px;
+}
+
+.active-link {
+  position: relative;
+  .sidebar__item {
+    background-color: #27343b;
+  }
+  .active-link-arrow {
+    display: block !important;
+  }
+}
+
+.login-button {
+  color: #1565C0;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.active-link-arrow {
+  display: none !important;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: -62px;
+  left: 97px;
+  margin-right: 0;
+  background-color: transparent;
+  color: #FAFAFA;
+}
+
+.loading-content {
+  margin-top: 64px;
+  height: 256px;
+}
+
+.w-256 {
+  min-width: 240px !important;
+}
+
+.u-auto-grow {
+  flex-grow: 1;
+  display: flex !important;
+}
+.u-no-wrap {
+  flex-wrap: nowrap !important;
+}
+
+.shadow {
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.grouped-list-box {
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.grouped-list-coin-info {
+
+
+}
+
+.grouped-list-coin-info__header {
+  width: 200px !important;
+  padding-right: 1rem;
+}
+
+.grouped-list-coin-info__header__icon {
+  padding-top: 16px;
+  width: 32px !important;
+}
+
+.grouped-list-coin-info__header__name {
+  font-size: 18px;
+}
+
+.grouped-list-coin-info__header__net-worth {
+  font-size: 20px;
+}
+
+.grouped-list-coin-info__header__net-worth-change {
+  font-size: 12px;
+}
+
+.grouped-list-coin-info__item {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  border: 0px solid rgba(34, 36, 38, 0.15);
+}
+
+.grouped-list-coin-info__item__label {
+  background-color: #EEEEEE;
+  width: 100%;
+  font-weight: bold;
+  padding: 4px 16px;
+}
+
+.grouped-list-coin-info__item__value {
+  background-color: white;
+  padding: 8px 16px;
+}
+
+.stats {
+  margin: 0 !important;
+  background-color: white;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.stats__item {
+
+}
+.stats__item__label {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+.stats__item__value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sub-header {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrata";
+}
+body {
+  font-family: "Montserrat";
+}
